@@ -44,7 +44,8 @@
         applyPreferences();
 
         // Event listener for Apply Changes button
-        document.getElementById("applyBtn").addEventListener("click", function () {
+        document.getElementById("applyBtn").addEventListener("click", function (e) {
+			e.preventDefault();
             var fontSize = document.getElementById("fontSize").value;
             var fontColor = document.getElementById("fontColor").value;
 
